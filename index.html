@@ -1,12 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Viktoria Pyrih | vikessaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('main-hero.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+      font-size: 48px;
+      z-index: 1;
+    }
+    .section {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-  <h1>Timeless Face. Fierce Spirit.</h1>
-  <p>The next global icon is here — meet Viktoria Pyrih.</p>
+  <header>
+    <div class="logo">VIKTORIA PYRIH</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Model. Muse. Magnetic.</h1>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Viktoria Pyrih — born in Ukraine, raised on dreams, and now manifesting them in New York.  
+      I don’t just model — I embody emotion, movement, silence, and strength. My presence speaks before I say a word.
+      <br><br>
+      You don’t book me for a pose — you book me for an experience. Fashion isn’t fabric, it’s energy. And I’m here to shift it.
+    </p>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="look1.jpg" alt="High Fashion 1">
+      <img src="look2.jpg" alt="Beauty 2">
+      <img src="look3.jpg" alt="Jewelry Campaign">
+      <img src="look4.jpg" alt="NYC Rooftop">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>
+      For bookings and collaborations:<br>
+      <strong>Email:</strong> <a href="mailto:vikessaa.collab@gmail.com">vikessaa.collab@gmail.com</a><br>
+      <strong>Instagram:</strong> <a href="https://instagram.com/vikessaa" target="_blank">@vikessaa</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Viktoria Pyrih | All rights reserved.
+  </footer>
 </body>
 </html>
